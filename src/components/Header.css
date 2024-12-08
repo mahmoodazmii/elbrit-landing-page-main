@@ -1,0 +1,331 @@
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20%;
+  flex-wrap: wrap;
+}
+
+/* Left Content */
+.header-content {
+  flex: 1 1 50%;
+  text-align: left;
+  color: #003569;
+}
+
+.header-content .subheading {
+  font-size: 1.2rem !important;
+  color: #999999;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+.header-content h1 {
+  font-size: 100px;
+  color: #083c75;
+  margin-bottom: 20px;
+}
+
+.header-content .description {
+  font-size: 18px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+.header-content .cta-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #123848;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header-content .cta-button:hover {
+  background-color: #051e3e;
+}
+
+/* Right Content */
+.header-image {
+  flex: 1 1 40%;
+  position: relative;
+  text-align: center;
+}
+
+.header-image .main-product {
+  width: 300px;
+  position: relative;
+  z-index: 2;
+}
+
+.header-image .product-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Icon styles */
+.icon-item h3 {
+  font-size: 16px;
+  color: #083c75;
+}
+
+.icon-item p {
+  font-size: 14px;
+  color: #555555;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 1024px) {
+  .header {
+    padding: 30px 15%;
+  }
+  
+  .header-content {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .header-content h1 {
+    font-size: 60px; /* Reduce font size */
+    margin-bottom: 10px;
+  }
+
+  .header-content .description {
+    font-size: 16px; /* Adjust text size */
+  }
+
+  .cta-button {
+    width: 70%; /* Increase button size */
+    padding: 12px 24px;
+  }
+
+  .header-image {
+    flex: 1 1 100%;
+    margin-top: 20px;
+  }
+
+  .header-image .main-product {
+    width: 250px;
+    height: auto;
+  }
+
+  .header-image .product-icons {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .icon-item {
+    width: 100%; /* Full width for icons */
+    justify-content: center;
+  }
+
+  .icon-item h3 {
+    font-size: 14px;
+  }
+
+  .icon-item p {
+    font-size: 12px;
+  }
+}
+
+/* Additional Styles for Very Small Screens (mobile-first approach) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px 10%;
+    text-align: center;
+  }
+
+  .header-content {
+    margin-bottom: 20px;
+  }
+
+  .header-image {
+    flex: 1 1 100%;
+  }
+
+  .header-content h1 {
+    font-size: 50px; /* Further reduce font size */
+  }
+
+  .cta-button {
+    width: 60%;
+    padding: 10px 20px;
+    margin-top: 15px;
+  }
+
+  .header-image .main-product {
+    width: 200px; /* Make the product image smaller */
+  }
+
+  .product-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .icon-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-text {
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .icon-text h3 {
+    font-size: 16px;
+  }
+
+  .icon-text p {
+    font-size: 12px;
+  }
+}
+
+/* Grid layout for 3 frames with fixed size */
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Grid items (frames) with fixed size */
+.header-grid>div {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* First Column: Description */
+.header-description {
+  text-align: left !important;
+}
+
+.description {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+}
+
+.cta-button {
+  width: 40%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Second Column: Image */
+.header-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon img {
+  max-width: 4.5rem;
+  max-height: 5rem;
+}
+
+.icon-text {
+  text-align: left;
+  flex: 1;
+  overflow: hidden;
+}
+
+.icon-text h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #123848;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.icon-text p {
+  font-size: 0.9rem;
+  color: #123848;
+  font-weight: 200;
+}
+
+
+/* Grid layout for 3 frames with fixed size */
+.header-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);  /* Default for larger screens */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Grid items (frames) with fixed size */
+.header-grid > div {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .header-description {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .header-grid {
+    /* background-color: red;  Optional background for debugging */
+    padding: 0px;  /* Remove any padding */
+    grid-template-columns: 1fr;  /* Stack the grid items in a single column on small screens */
+    justify-content: stretch;  /* Ensure the items stretch to full width */
+  }
+
+  /* Grid items (frames) with full width and no padding */
+  .header-grid > div {
+    width: 100%;  /* Each grid item takes up 100% width */
+    height: auto;  /* Allow height to adjust automatically */
+    padding: 0px;  /* Remove padding */
+    margin-bottom: 20px;  /* Add spacing between items */
+  }
+}

@@ -1,0 +1,161 @@
+.features-section .custom-product-icons-container {
+  padding: 40px;
+  padding: 40px 80px;
+  margin-left: 10rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.features-section .custom-product-icons-container .product-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  background-color: #123848;
+  border-radius: 4rem;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+
+.features-section .custom-product-icons-container .product-icons {
+  position: relative;
+  overflow: visible; /* Ensure children are not clipped */
+}
+.features-section .custom-product-icons-container .icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:0px;
+  text-align: center;
+  /* background-color: #123848;
+   */
+   background-color: initial;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: -4rem; /* Keep the desired negative margin */
+  padding-left: 5rem;
+  position: relative; /* Ensure proper positioning context */
+  z-index: 1; /* Ensure it appears correctly */
+  overflow: visible; /* Ensure child elements like the icon aren't clipped */
+}
+
+.features-section .custom-product-icons-container .icon {
+  background-color: white;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px; /* No space below the icon */
+  position: relative; /* Keeps it in the layout flow */
+  z-index: 2; /* Ensure the icon is above other content */
+}
+
+.features-section .custom-product-icons-container .icon img {
+  width: 40px;
+  height: auto;
+}
+
+.features-section .custom-product-icons-container .icon-text {
+  width: 100%;
+  word-wrap: break-word; /* Ensures long words break to the next line */
+  overflow-wrap: anywhere; /* Allows wrapping at any point */
+  padding: 20px 10px; /* Increase padding to avoid text being cut */
+  box-sizing: border-box;
+  background-color: #123848;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.features-section .custom-product-icons-container .icon-text h3 {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", 
+                -apple-system, BlinkMacSystemFont, Roboto, 
+                "Helvetica Neue", sans-serif; /* Font stack */
+  font-size: 18px; /* Font size */
+  font-weight: 400; /* Normal font weight */
+  font-style: normal; /* Normal style */
+  font-variant: normal; /* Default variant */
+  color: #f3f2f1; /* Text color */
+  background-color: #123848;
+  line-height: normal; /* Default line height */
+  letter-spacing: normal; /* Default letter spacing */
+  word-spacing: 0px; /* Default word spacing */
+  text-transform: none; /* No transformation */
+  text-decoration: none; /* No underline or decoration */
+  margin: 0; /* Remove margin */
+}
+
+.features-section .custom-product-icons-container .icon-text p {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", 
+                -apple-system, BlinkMacSystemFont, Roboto, 
+                "Helvetica Neue", sans-serif; /* Font stack */
+  font-size: 10px; /* Font size */
+  font-weight: 10; /* Normal font weight */
+  font-style: normal; /* Normal font style */
+  font-variant: normal; /* Default variant */
+  color: #f3f2f1; /* Text color */
+  background-color: #123848;
+  font-weight: 200;
+}
+
+.features-section .custom-product-icons-container .icon-text {
+  width: 100%;
+  word-wrap: break-word; /* Ensures long words break to the next line */
+  overflow-wrap: anywhere; /* Allows wrapping at any point */
+  padding: 20px 10px; /* Increase padding to avoid text being cut */
+  box-sizing: border-box;
+  background-color: #123848;
+}
+
+
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .features-section .custom-product-icons-container {
+    padding: 20px;  /* Reduce padding */
+    margin-left: 0;  /* Remove left margin */
+  }
+
+  .features-section .custom-product-icons-container .product-icons {
+    background-color: #123848;
+    border-radius: 2rem; /* Adjust border radius for mobile */
+    max-width: none;
+    grid-template-columns: 1fr; /* Stack the items in a single column */
+    gap: 10px; /* Add gap between grid items */
+  }
+
+  .features-section .custom-product-icons-container .icon-item {
+    padding-left: 0; /* Remove left padding for mobile */
+    margin-top: 0;  /* Reset negative margin */
+    flex-direction: row;  /* Align icons and text side by side */
+    align-items: flex-start;  /* Align icon and text to the start */
+  }
+
+  .features-section .custom-product-icons-container .icon-text {
+    font-size: 14px; /* Increase font size for readability */
+    
+    padding: 15px 10px;  /* Adjust padding */
+  }
+
+  .features-section .custom-product-icons-container .product-icons {
+    position: relative;
+    overflow: visible; /* Ensure children are not clipped */
+  }
+  .icon{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .features-section .custom-product-icons-container .icon {
+    width: 50px;
+    text-align: center;
+    
+    height: 50px;
+    margin-right: 10px; /* Space between icon and text */
+  }
+
+  .features-section .custom-product-icons-container .icon img {
+    width: 30px; /* Adjust icon size for mobile */
+  }
+}

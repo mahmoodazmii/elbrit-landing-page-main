@@ -1,0 +1,52 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Testing
+coverage/
+
+# Production build output
+build/
+
+# Miscellaneous system files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/           # IntelliJ IDEA
+.vscode/         # Visual Studio Code
+*.suo            # Visual Studio
+*.ntvs*          # Node.js Tools for Visual Studio
+*.njsproj        # Node.js project files
+*.sln            # Solution files
+
+# Temporary files
+*.lock           # Lock files from npm/yarn
+*.cache          # Cache files
+.cache-loader/
+
+# Static assets cache
+*.svg.cache
+
+# Generated files
+*.out
+*.log
+
+# Optional: Specific files for CI/CD
+*.config.js
+*.settings.json

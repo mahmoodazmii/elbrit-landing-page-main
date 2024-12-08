@@ -1,0 +1,92 @@
+.footer {
+  padding: 0 100px !important;
+  background-color: #123848; /* Dark Blue background */
+  color: white; /* White text */
+  font-family: Arial, sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12-column grid */
+  gap: 1rem; /* Gap of 1rem between items */
+  padding: 20px;
+}
+
+.footer-item {
+  grid-column: span 4; /* Each item spans 4 columns */
+  background-color: #164f68; /* Slightly lighter blue */
+  color: white; /* Text color */
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  text-align: left;
+  word-wrap: break-word; /* Ensure long words break onto the next line */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.footer-item .icon {
+  margin-right: 10px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+  align-items: self-start;
+  grid-column: span 4; /* Footer info takes 4 columns */
+  text-align: center; /* Center the content inside the footer-info */
+}
+
+.footer-info img {
+  max-width: 100%; /* Responsive image */
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  grid-column: span 4; /* This should span the whole width */
+  text-align: top; /* Center the text */
+  font-size: 13px !important;
+  font-weight: 200;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-item .label {
+  line-height: 1.5;
+  color: #f1f1f1; /* Lighter text color */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #d1d1d1; /* Slightly lighter text */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .footer{
+    padding: 0px  !important;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr); /* Stack items on smaller screens */
+  }
+
+  .footer-item {
+    padding: 0px !important;
+    grid-column: span 1; /* Each item takes full width on small screens */
+  }
+
+  .footer-info {
+    grid-column: span 1; /* Footer info takes full width on small screens */
+    padding: 15px; /* Adjust padding for mobile */
+  }
+
+  .contact-item {
+    grid-column: span 1; /* Contact item takes full width */
+    padding: 10px; /* Adjust padding for better spacing */
+  }
+}
